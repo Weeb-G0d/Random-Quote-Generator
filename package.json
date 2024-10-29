@@ -4,17 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://weeb-g0d.github.io/random-quote-machine",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
-  "lint": "eslint .",
-  "preview": "vite preview"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
