@@ -17,6 +17,8 @@ const getRandomColor= ():string =>{
 
   return `rgb(${red}, ${green}, ${blue})`;
 }
+
+const transition= "all 1s";
 function App() {
   const [quote, setQuote] = useState<Quote>(getRandomQuote());
   const [color,setColor] =useState<string>(getRandomColor());
@@ -25,7 +27,7 @@ function App() {
     setColor(getRandomColor());
   }
   
-  return <div className='wbody' style={{backgroundColor : color}}>
+  return <div className='wbody' style={{backgroundColor : color, transition}}>
   
   <div id="quote-box">
     <div id="quote-content">
@@ -40,7 +42,7 @@ function App() {
           target='_blank'
           style = {{ backgroundColor:color ,color: 'white', marginRight:"10px"}}
           ><FaTwitter size="15"/></a>
-          <button id="new-quote" onClick={changeQuote} style={{color : color}}>Change Quote</button>
+          <button id="new-quote" onClick={changeQuote} style={{color : 'white', backgroundColor:color}}>Change Quote</button>
        </div>
   </div>
 
