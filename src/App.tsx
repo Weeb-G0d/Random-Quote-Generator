@@ -29,7 +29,9 @@ function App() {
     setQuote(getRandomQuote());
     setColor(getRandomColor());
   }
-  
+  const tweeterMsg= `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+    `"${quote.quote}" - ${quote.author}`
+  )}`;
   return <div className='wbody' style={{backgroundColor : color, transition}}>
   
   <div id="quote-box">
@@ -40,7 +42,7 @@ function App() {
         <h4 id="author" style={{color : color}}>-{quote.author}</h4>
      </div>
        <div className='buttons'>
-          <a href="twitter.com/intent/tweet"
+          <a href={tweeterMsg}
           id="tweet-quote"
           target='_blank'
           style = {{ backgroundColor:color ,color: 'white', marginRight:"10px"}}
