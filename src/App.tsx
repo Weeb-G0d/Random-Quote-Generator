@@ -49,7 +49,7 @@ function App() {
         
        </div>
        <footer style={{ marginTop: '25px ', color: color, textAlign: 'center', fontFamily:'cursive' }}>
-          © 2024 powered by racism
+          © 2024 Bishes Maharjan
         </footer>
   </div>
 
