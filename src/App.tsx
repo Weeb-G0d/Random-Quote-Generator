@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import quotes from './assets/bunchofquotes.json'
-import { FaTwitter } from 'react-icons/fa';
-import { FaQuoteLeft } from 'react-icons/fa';
-import { FaQuoteRight } from 'react-icons/fa';
+import FaTwitter from './FaTwitter.tsx';
+import FaQuoteLeft from './FaQuoteLeft.tsx';
+import FaQuoteRight from './FaQuoteRight.tsx';
+
+
 interface Quote {
   quote: string;
   author: string;
@@ -32,9 +34,9 @@ function App() {
   
   <div id="quote-box">
     <div id="quote-content">
-    <FaQuoteLeft size="30"/>
+    <FaQuoteLeft/>
         <h2 id="text" style={{color : color}}>{quote.quote}</h2>
-        <FaQuoteRight size="30"/>
+        <FaQuoteRight/>
         <h4 id="author" style={{color : color}}>-{quote.author}</h4>
      </div>
        <div className='buttons'>
