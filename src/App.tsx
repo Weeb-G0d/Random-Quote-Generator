@@ -46,7 +46,11 @@ function App() {
           style = {{ backgroundColor:color ,color: 'white', marginRight:"10px"}}
           ><FaTwitter /></a>
           <button id="new-quote" onClick={changeQuote} style={{color : 'white', backgroundColor:color}}>Change Quote</button>
+        
        </div>
+       <footer style={{ marginTop: '25px ', color: color, textAlign: 'center', fontFamily:'cursive' }}>
+          © 2024 powered by racism
+        </footer>
   </div>
 
   </div>
